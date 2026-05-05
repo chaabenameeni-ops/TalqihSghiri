@@ -1,0 +1,48 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+/* Notifications list */
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+/* Notification icon backgrounds */
+.notif-icon-pink {
+  background: hsla(340, 60%, 65%, .1);
+  color: var(--pink);
+}
+.notif-icon-danger {
+  background: hsla(0, 72%, 55%, .1);
+  color: var(--danger);
+}
+.notif-icon-success {
+  background: hsla(150, 50%, 50%, .1);
+  color: var(--success);
+}
+.notif-icon-muted {
+  background: var(--pink-light);
+  color: var(--text-muted);
+}
+/* Unread dot */
+.unread-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pink);
+  vertical-align: middle;
+  margin-left: .3rem;
+}
+/* Notification meta */
+.notif-meta {
+  margin-top: .4rem;
+}
+.notif-date {
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-left: .5rem;
+}

@@ -1,0 +1,88 @@
+/* Page header with button */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-header-actions {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+/* Child profile card */
+.child-profile {
+  margin-bottom: 1.5rem;
+}
+.child-profile-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.child-profile-avatar {
+  font-size: 3rem;
+}
+.child-profile-info {
+  flex: 1;
+}
+.child-profile-info h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.child-profile-info p {
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+.child-profile-percent {
+  text-align: center;
+}
+.child-profile-percent-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--pink);
+  font-family: var(--font-heading);
+}
+.child-profile-percent-label {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+/* Calendar section title */
+.calendar-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+/* Vaccine list */
+.vaccine-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+/* Vaccine row right-side info */
+.vaccine-status {
+  text-align: right;
+}
+.vaccine-date {
+  font-size: .7rem;
+  color: var(--text-muted);
+}
+/* Vaccine icon backgrounds */
+.vaccine-icon-success {
+  background: hsla(150, 50%, 50%, .1);
+  color: var(--success);
+}
+.vaccine-icon-pink {
+  background: hsla(340, 60%, 65%, .1);
+  color: var(--pink);
+}
+.vaccine-icon-danger {
+  background: hsla(0, 72%, 55%, .1);
+  color: var(--danger);
+}
+/* Adam card spacing */
+.child-profile-adam {
+  margin: 2rem 0 1.5rem;
+}

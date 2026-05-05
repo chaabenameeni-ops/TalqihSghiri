@@ -1,0 +1,449 @@
+.admin-blue {
+  --blue:        hsl(200, 65%, 55%);
+  --blue-light:  hsl(200, 40%, 92%);
+  --blue-bg:     hsl(200, 40%, 96%);
+  --blue-glow:   hsl(200, 65%, 70%);
+  --blue-shadow: 0 4px 20px -4px hsla(200, 65%, 55%, 0.15);
+  --blue-glow-shadow: 0 0 20px hsla(200, 65%, 55%, 0.2);
+  background: var(--blue-bg) !important;
+}
+
+.admin-blue .sidebar {
+  border-right-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .sidebar-nav a {
+    background: transparent !important;
+    color: #555 !important;
+    transition: 0.3s ease;
+}
+.admin-blue .sidebar-nav a.active .nav-icon {
+    filter: brightness(0) invert(1);
+}
+.admin-blue .sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: hsl(200, 25%, 35%);
+    border-radius: 12px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.admin-blue .logo-icon {
+  background: var(--blue);
+}
+
+.admin-blue .text-blue {
+  color: var(--blue);
+}
+
+/* ---------- Top Bar ---------- */
+.admin-blue .admin-topbar h1 {
+  color: hsl(200, 30%, 15%);
+}
+.admin-blue .sidebar-nav a:hover {
+    background: var(--blue-light) !important;
+    color: var(--blue) !important;
+}
+.admin-blue .sidebar-nav a.active {
+    background: var(--blue) !important; 
+    color: white !important;
+}
+.admin-blue .admin-avatar {
+  background: var(--blue-light);
+}
+
+/* ---------- Stats Cards Blue ---------- */
+.admin-blue .admin-stat-card {
+  border-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .admin-stat-card:hover {
+  box-shadow: var(--blue-shadow);
+}
+
+.admin-blue .stat-icon-blue {
+  background: hsla(200, 65%, 55%, .1);
+}
+
+.admin-blue .stat-icon-green {
+  background: hsla(150, 50%, 50%, .1);
+}
+
+.admin-blue .stat-icon-orange {
+  background: hsla(30, 90%, 55%, .1);
+}
+
+.admin-blue .stat-icon-red {
+  background: hsla(0, 72%, 55%, .1);
+}
+
+/* ---------- Tabs Blue ---------- */
+.admin-blue .admin-tab:hover {
+  color: var(--blue);
+}
+
+.admin-blue .admin-tab.active {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+/* ---------- Table Blue ---------- */
+.admin-blue .admin-table-wrapper {
+  border-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .admin-toolbar {
+  border-bottom-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .admin-search {
+  border-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .admin-search:focus-within {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px hsla(200, 65%, 55%, .1);
+}
+
+.admin-blue .admin-table th {
+  background: var(--blue-bg);
+  border-bottom-color: hsl(200, 30%, 88%);
+}
+
+.admin-blue .admin-table td {
+  border-bottom-color: hsl(200, 30%, 90%);
+}
+
+.admin-blue .admin-table tr:hover td {
+  background: hsla(200, 40%, 96%, .6);
+}
+
+.admin-blue .btn-primary {
+  background: var(--blue);
+}
+
+.admin-blue .btn-primary:hover {
+  box-shadow: var(--blue-glow-shadow);
+}
+
+.admin-blue .btn-outline-blue {
+  background: transparent;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.admin-blue .btn-outline-blue:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+/* ---------- Badge Blue ---------- */
+.badge-blue {
+  background: hsla(200, 65%, 55%, .1);
+  color: hsl(200, 65%, 45%);
+}
+
+/* ---------- Btn Icon Blue ---------- */
+.admin-blue .btn-icon:hover {
+  background: var(--blue-light);
+  border-color: var(--blue);
+}
+
+.admin-blue .btn-icon.danger:hover {
+  background: hsla(0, 72%, 55%, .1);
+  border-color: var(--danger);
+}
+
+/* ---------- Page Btn Blue ---------- */
+.admin-blue .page-btn:hover {
+  background: var(--blue-light);
+}
+
+.admin-blue .page-btn.active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+/* ---------- Vaccine Detail Card ---------- */
+.vaccine-detail-card {
+  background: var(--card);
+  border: 1px solid hsl(200, 30%, 88%);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow .3s;
+}
+
+.vaccine-detail-card:hover {
+  box-shadow: var(--blue-shadow);
+}
+
+.vaccine-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.vaccine-detail-title {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.vaccine-detail-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background: hsla(200, 65%, 55%, .1);
+}
+
+.vaccine-detail-title h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.vaccine-detail-title p {
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+.vaccine-detail-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.vaccine-detail-field label {
+  display: block;
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: .25rem;
+}
+
+.vaccine-detail-field span {
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/* ---------- Add Vaccine Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: hsla(200, 20%, 10%, .4);
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-box {
+  background: var(--card);
+  border-radius: 1.25rem;
+  width: 520px;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  box-shadow: 0 20px 60px -15px hsla(200, 65%, 30%, .25);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid hsl(200, 30%, 90%);
+}
+
+.modal-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color .2s;
+}
+
+.modal-close:hover {
+  color: var(--danger);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: .82rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  color: hsl(200, 25%, 20%);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: .55rem .9rem;
+  border: 1px solid hsl(200, 30%, 88%);
+  border-radius: .75rem;
+  font-size: .85rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: hsl(200, 65%, 55%);
+  box-shadow: 0 0 0 3px hsla(200, 65%, 55%, .1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: .75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid hsl(200, 30%, 90%);
+}
+
+/* ---------- Filter Bar ---------- */
+.filter-bar {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: .35rem .85rem;
+  border-radius: 50px;
+  font-size: .78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  border: 1px solid hsl(200, 30%, 88%);
+  background: var(--card);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.filter-chip:hover {
+  border-color: hsl(200, 65%, 55%);
+  color: hsl(200, 65%, 55%);
+}
+
+.filter-chip.active {
+  background: hsl(200, 65%, 55%);
+  color: #fff;
+  border-color: hsl(200, 65%, 55%);
+}
+
+/* ---------- Dose Timeline ---------- */
+.dose-timeline {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.dose-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .65rem;
+  font-weight: 700;
+  border: 2px solid hsl(200, 30%, 85%);
+  color: var(--text-muted);
+  background: #fff;
+}
+
+.dose-dot.completed {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+}
+
+.dose-dot.current {
+  background: hsl(200, 65%, 55%);
+  border-color: hsl(200, 65%, 55%);
+  color: #fff;
+}
+
+.dose-line {
+  width: 16px;
+  height: 2px;
+  background: hsl(200, 30%, 85%);
+}
+
+/* ---------- Pagination Blue ---------- */
+.admin-blue .admin-pagination {
+  border-top-color: hsl(200, 30%, 88%);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .vaccine-detail-body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .filter-chip {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .vaccine-detail-body {
+    grid-template-columns: 1fr;
+  }
+}

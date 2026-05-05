@@ -1,0 +1,393 @@
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.admin-topbar h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.admin-topbar p {
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.admin-name {
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.admin-role {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Stats Cards ---------- */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: box-shadow .3s;
+}
+
+.admin-stat-card:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.admin-stat-icon.users    { background: hsla(340, 60%, 65%, .1); }
+.admin-stat-icon.children { background: hsla(200, 60%, 60%, .1); }
+.admin-stat-icon.vaccines { background: hsla(150, 50%, 50%, .1); }
+.admin-stat-icon.rdv      { background: hsla(40, 90%, 60%, .1); }
+
+.admin-stat-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.admin-stat-lbl {
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+.admin-stat-trend {
+  font-size: .7rem;
+  font-weight: 700;
+  margin-top: .15rem;
+}
+
+.trend-up   { color: var(--success); }
+.trend-down { color: var(--danger); }
+
+/* ---------- Tabs ---------- */
+.admin-tabs {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0;
+}
+
+.admin-tab {
+  padding: .6rem 1.25rem;
+  font-size: .9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all .2s;
+}
+
+.admin-tab:hover {
+  color: var(--pink);
+}
+
+.admin-tab.active {
+  color: var(--pink);
+  border-bottom-color: var(--pink);
+  font-weight: 700;
+}
+
+/* ---------- Table ---------- */
+.admin-table-wrapper {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.admin-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-search {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: .4rem .75rem;
+  width: 280px;
+}
+
+.admin-search input {
+  border: none;
+  outline: none;
+  font-size: .85rem;
+  font-family: var(--font-body);
+  flex: 1;
+  background: transparent;
+}
+
+.admin-search-icon {
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: .75rem 1.25rem;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-bottom: 1px solid var(--border);
+  background: var(--pink-bg);
+}
+
+.admin-table td {
+  padding: .75rem 1.25rem;
+  font-size: .85rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background: hsla(340, 30%, 97%, .5);
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.user-cell-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  flex-shrink: 0;
+}
+
+.user-cell-name {
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.user-cell-email {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+/* Status badge */
+.status-active {
+  background: hsla(150, 50%, 50%, .1);
+  color: var(--success);
+}
+
+.status-inactive {
+  background: hsla(0, 72%, 55%, .1);
+  color: var(--danger);
+}
+
+/* Actions */
+.admin-actions {
+  display: flex;
+  gap: .4rem;
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: .5rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: .85rem;
+  transition: all .2s;
+}
+
+.btn-icon:hover {
+  background: var(--pink-light);
+  border-color: var(--pink);
+}
+
+.btn-icon.danger:hover {
+  background: hsla(0, 72%, 55%, .1);
+  border-color: var(--danger);
+}
+
+/* ---------- Vaccines Management ---------- */
+.vaccine-mgmt-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.vaccine-mgmt-row:last-child {
+  border-bottom: none;
+}
+
+.vaccine-mgmt-row:hover {
+  background: hsla(340, 30%, 97%, .5);
+}
+
+.vaccine-mgmt-info {
+  flex: 1;
+}
+
+.vaccine-mgmt-info strong {
+  font-size: .9rem;
+  display: block;
+}
+
+.vaccine-mgmt-info span {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Pagination ---------- */
+.admin-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.admin-pagination span {
+  font-size: .8rem;
+  color: var(--text-muted);
+}
+
+.pagination-btns {
+  display: flex;
+  gap: .3rem;
+}
+
+.page-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: .5rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+  font-family: var(--font-body);
+}
+
+.page-btn:hover {
+  background: var(--pink-light);
+}
+
+.page-btn.active {
+  background: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+
+/* ---------- Tab Content ---------- */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-toolbar {
+    flex-direction: column;
+    gap: .75rem;
+    align-items: stretch;
+  }
+
+  .admin-search {
+    width: 100%;
+  }
+
+  .admin-table {
+    font-size: .78rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: .5rem .75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+}
