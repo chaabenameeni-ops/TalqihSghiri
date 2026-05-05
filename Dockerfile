@@ -2,9 +2,11 @@ FROM php:8.2-apache
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
+RUN a2enmod rewrite
+
 COPY . /var/www/html/
 
-RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf && \
-    sed -i 's/<VirtualHost \*:80>/<VirtualHost *:8080>/g' /etc/apache2/sites-enabled/000-default.conf
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data
 
-EXPOSE 8080
+EXPOSE 80
