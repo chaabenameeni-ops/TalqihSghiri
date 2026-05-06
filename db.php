@@ -1,11 +1,11 @@
 <?php
-$conn = mysqli_connect(
-    getenv('MYSQLHOST'),
-    getenv('MYSQLUSER'),
-    getenv('MYSQLPASSWORD'),
-    getenv('MYSQLDATABASE'),
-    getenv('MYSQLPORT')
-);
+$host = getenv('MYSQLHOST') ?: 'localhost';
+$user = getenv('MYSQLUSER') ?: 'root';
+$pass = getenv('MYSQLPASSWORD') ?: '';
+$db   = getenv('MYSQLDATABASE') ?: 'vaccins';
+$port = getenv('MYSQLPORT') ?: 3306;
+
+$conn = mysqli_connect($host, $user, $pass, $db, $port);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
